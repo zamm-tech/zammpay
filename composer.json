@@ -1,0 +1,23 @@
+{
+    "name": "zamm-tech/zammpay",
+    "description": "PHP library for ZAMM PAY Gateway",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ZAMM",
+            "email": "info@zamm.top",
+            "homepage": "https://zamm.top"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zammpay\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+  "require": {}
+}
