@@ -15,7 +15,7 @@ class ZammpayClient
      * @param string $apiKey
      * @param string $apiBaseUrl
      */
-    public function __construct(string $apiKey, string $apiBaseUrl = 'https://pay.zamm.top/api')
+    public function __construct(string $apiKey, string $apiBaseUrl = 'https://pay.zammbd.com/api')
     {
         $this->apiKey = $apiKey;
         $this->apiBaseUrl = rtrim($apiBaseUrl, '/');
