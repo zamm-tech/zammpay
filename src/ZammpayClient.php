@@ -41,7 +41,7 @@ class ZammpayClient
             ]);
         }
 
-        return new ZammpayResponse(false, [], $response['messages'] ?? 'Unknown error occurred.');
+        return new ZammpayResponse(false, [], $response['message'] ?? 'Unknown error occurred.');
     }
 
     /**
@@ -61,7 +61,7 @@ class ZammpayClient
             return new ZammpayResponse(true, $response);
         }
 
-        return new ZammpayResponse(false, [], $response['messages'] ?? 'Verification failed.');
+        return new ZammpayResponse(false, [], $response['message'] ?? 'Verification failed.');
     }
 
     /**
