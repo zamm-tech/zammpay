@@ -1,23 +1,56 @@
 {
     "name": "zamm-tech/zammpay",
-    "description": "PHP library for ZAMM PAY Gateway",
+    "description": "Official PHP library for the ZAMM PAY payment gateway",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "zammpay",
+        "zamm",
+        "payment",
+        "payment-gateway",
+        "bkash",
+        "nagad",
+        "rocket",
+        "bangladesh"
+    ],
+    "homepage": "https://pay.zammbd.com",
     "authors": [
         {
             "name": "ZAMM",
-            "email": "info@zammbd.com",
+            "email": "zammtechbd@gmail.com",
             "homepage": "https://pay.zammbd.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/zamm-tech/zammpay/issues",
+        "source": "https://github.com/zamm-tech/zammpay"
+    },
     "require": {
-        "php": ">=7.2"
+        "php": "^7.2 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.12 || ^2.1",
+        "phpunit/phpunit": "^8.5.36 || ^9.6"
     },
     "autoload": {
         "psr-4": {
             "Zammpay\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Zammpay\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
     "minimum-stability": "stable",
-  "require": {}
+    "prefer-stable": true
 }
